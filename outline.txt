@@ -1,0 +1,29 @@
+Idea:
+
+    User inputs letter in the console. The program chooses a random city, country, river (Stadt, Land, Fluss) from a list. The game can be played over multiple rounds. When the computer is out of words in any category, a message is displayed.
+    For the practice of objects and arrays. Each city, country, river array will include respective entries as objects. Each of these entries will have a 'played' property, to keep track of which entries have been played so far.
+    To reduce the work load, the program will be restricted to vocal letters only.
+
+
+Structure:
+
+    The game will have one array of objects storing all cities, countries and rivers starting with a,e,i,o,u and g ...
+
+        _type: string, indicating wether it's a city, country or river
+        _name: string, the name...
+        wasPlayed: bool, indicating if the object has been chosen before.
+
+
+Program Flow:
+    1. User enters a letter
+    2. Program filters for items that starting with the inputLetter from the user.
+    3. Program filters for array of still available elements (that have not been played)
+    4. Program returns result:
+            Either a ranomly chosen element of each object._type 
+            Or Print 'I dont have a [object._type] starting with [inputLetter]
+
+
+Notes:
+    Consider to have the code run in do-while, ... only quit after exit from user input..
+
+
